@@ -9,10 +9,11 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 	s.source = { :git => "https://github.com/bbc/atinternet-apple-sdk.git", :tag => s.version}
 	s.module_name = 'TrackerAppExtension'
-	s.ios.deployment_target	= '11.0'
+	s.swift_version = '5.0'
+	s.ios.deployment_target	= '13.0'
 	s.pod_target_xcconfig = { 'OTHER_SWIFT_FLAGS' => '-DAT_EXTENSION' }
 	s.source_files = "ATInternetTracker/Sources/*.{h,m,swift}"
 	s.exclude_files = ["ATInternetTracker/Sources/BackgroundTask.swift","ATInternetTracker/Sources/Debugger.swift","ATInternetTracker/Sources/TrackerTests-Bridging-Header.h"]
-	s.platform = :ios, "11.0"
+	s.platform = :ios, "13.0"
 	s.resources = "ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle"
 end

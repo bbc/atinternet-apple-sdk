@@ -9,8 +9,9 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 	s.source = { :git => "https://github.com/bbc/atinternet-apple-sdk.git", :tag => s.version}
 	s.module_name = 'Tracker'
-	s.ios.deployment_target	= '11.0'
-	s.tvos.deployment_target = '12.1'
+	s.swift_version = '5.0'
+	s.ios.deployment_target	= '13.0'
+	s.tvos.deployment_target = '13.0'
 	s.watchos.deployment_target = '3.0'
 
 	s.subspec 'Tracker' do |tracker|
