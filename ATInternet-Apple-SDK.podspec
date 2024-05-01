@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 	s.swift_version = '5.0'
 	s.ios.deployment_target	= '13.0'
 	s.tvos.deployment_target = '13.0'
-	s.watchos.deployment_target = '3.0'
+	s.watchos.deployment_target = '6.0'
 	s.resource_bundles = {"ATInternet-Apple-SDK" => ["ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
 	
 	s.subspec 'Tracker' do |tracker|
