@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
 	s.source_files = "ATInternetTracker/Sources/*.{h,m,swift}"
 	s.exclude_files = ["ATInternetTracker/Sources/BackgroundTask.swift","ATInternetTracker/Sources/Debugger.swift","ATInternetTracker/Sources/TrackerTests-Bridging-Header.h"]
 	s.platform = :ios, "13.0"
-	s.resources = "ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle"
+	s.resource_bundles = {"ATInternet-Apple-SDK-AppExtension" => ["ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle", "ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
 end
