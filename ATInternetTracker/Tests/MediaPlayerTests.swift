@@ -59,14 +59,14 @@ class MediaPlayerTests: XCTestCase {
     func testRemoveAllMediaPlayers() {
         _ = mediaPlayers.add()
         _ = mediaPlayers.add()
-        _ = mediaPlayers.removeAll()
+        mediaPlayers.removeAll()
         
         XCTAssert(mediaPlayers.playerIds.count == 0, "Le nombre d'objet doit être égale à 2")
     }
     
     func testRemoveMediaPlayer() {
         _ = mediaPlayers.add(72)
-        _ = mediaPlayers.remove(72)
+        mediaPlayers.remove(72)
         
         XCTAssert(mediaPlayers.playerIds.count == 0, "Le nombre d'objet doit être égale à 2")
     }
