@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
 	
 	s.subspec 'Tracker' do |tracker|
 		tracker.source_files = "ATInternetTracker/Sources/*.{h,m,swift}"
-		tracker.resource_bundles = {"Tracker" => ["ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle", "ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
+		tracker.resources = "ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle"
+		tracker.resource_bundles = {"Tracker" => ["ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
 		tracker.platform = :ios
 	end
 	
@@ -25,20 +26,23 @@ Pod::Spec.new do |s|
 		appExt.source_files = "ATInternetTracker/Sources/*.{h,m,swift}"
 		appExt.exclude_files = ["ATInternetTracker/Sources/BackgroundTask.swift","ATInternetTracker/Sources/Debugger.swift","ATInternetTracker/Sources/TrackerTests-Bridging-Header.h"]
 		appExt.platform = :ios
-		appExt.resource_bundles = {"TrackerExtension" => ["ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle", "ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
+		appExt.resources = "ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle"
+		appExt.resource_bundles = {"TrackerExtension" => ["ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
 	end
 	
 	s.subspec 'watchOSTracker' do |wos|
 		wos.source_files = "ATInternetTracker/Sources/*.{h,m,swift}"
 		wos.exclude_files = ["ATInternetTracker/Sources/BackgroundTask.swift","ATInternetTracker/Sources/ATReachability.swift","ATInternetTracker/Sources/Debugger.swift","ATInternetTracker/Sources/TrackerTests-Bridging-Header.h"]
 		wos.platform = :watchos
-		wos.resource_bundles = {"watchOSTracker" => ["ATInternetTracker/Sources/DefaultConfiguration.plist","ATInternetTracker/Sources/core.manifest.json", "ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
+		wos.resources = "ATInternetTracker/Sources/DefaultConfiguration.plist","ATInternetTracker/Sources/core.manifest.json"
+		wos.resource_bundles = {"watchOSTracker" => ["ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
 	end
 	
 	s.subspec 'tvOSTracker' do |tvos|
 		tvos.source_files = "ATInternetTracker/Sources/*.{h,m,swift}"
 		tvos.exclude_files = ["ATInternetTracker/Sources/TrackerTests-Bridging-Header.h", "ATInternetTracker/Sources/watchOSTracker.h"]
 		tvos.platform = :tvos
-		tvos.resource_bundles = {"tvOSTracker" => ["ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle", "ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
+		tvos.resources = "ATInternetTracker/Sources/DefaultConfiguration*", "ATInternetTracker/Sources/TrackerBundle.bundle"
+		tvos.resource_bundles = {"tvOSTracker" => ["ATInternetTracker/Sources/PrivacyInfo.xcprivacy"]}
 	end
 end
