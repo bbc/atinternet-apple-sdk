@@ -332,7 +332,7 @@ class BuilderTests: XCTestCase, TrackerDelegate {
         
         let builder = Builder(tracker: self.tracker)
         
-        var strings = builder.prepareQuery()
+        let strings = builder.prepareQuery()
         
         XCTAssert(strings["p"]?.0 == "&p=home", "le premier paramètre doit être égal à &p=home")
         XCTAssert(strings["stc"]?.0 == "&stc=chou,patate,carotte", "le second paramètre doit être égal à &stc=chou,patate,carotte")
@@ -361,7 +361,7 @@ class BuilderTests: XCTestCase, TrackerDelegate {
         
         let builder = Builder(tracker: self.tracker)
         
-        var strings = builder.prepareQuery()
+        let strings = builder.prepareQuery()
         
         XCTAssert(strings["p"]?.0 == "&p=home", "le premier paramètre doit être égal à &p=home")
         XCTAssert(strings["stc"]?.0 == "&stc=chou,patate,carotte", "le second paramètre doit être égal à &stc=chou,patate,carotte")
@@ -390,7 +390,7 @@ class BuilderTests: XCTestCase, TrackerDelegate {
         
         let builder = Builder(tracker: self.tracker)
         
-        var strings = builder.prepareQuery()
+        let strings = builder.prepareQuery()
         
         XCTAssert(strings["p"]?.0 == "&p=home", "le premier paramètre doit être égal à &p=home")
         XCTAssert(strings["stc"]?.0 == "&stc=chou,patate,carotte", "le second paramètre doit être égal à &stc=chou,patate,carotte")
@@ -433,7 +433,7 @@ class BuilderTests: XCTestCase, TrackerDelegate {
         var buffer = [String:Param]()
         builder.persistentParameters.forEach { (k,v) in buffer[k] = v }
         builder.volatileParameters.forEach { (k,v) in buffer[k] = v }
-        var params = builder.organizeParameters(buffer)
+        let params = builder.organizeParameters(buffer)
         
         XCTAssert(params[0].key == "p", "Le premier paramètre doit etre p")
         XCTAssert(params[params.count-2].key == "crash", "L'avant dernier paramètre doit etre crash")

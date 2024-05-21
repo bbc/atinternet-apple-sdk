@@ -155,7 +155,6 @@ public class ATInternet: NSObject {
     }
     
     /// Disable user identification.
-    @available(*, deprecated, message: "")
     @objc public class var optOut: Bool {
         get {
             return TechnicalContext.optOut

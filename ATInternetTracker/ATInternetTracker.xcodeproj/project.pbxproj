@@ -13,6 +13,10 @@
 		1311F4E82B31C45300162280 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F4E42B31C45300162280 /* URLExtension.swift */; };
 		1311F4E92B31C45300162280 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F4E42B31C45300162280 /* URLExtension.swift */; };
 		1311F4EA2B31C45300162280 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F4E42B31C45300162280 /* URLExtension.swift */; };
+		49B941682BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 49B941672BDF954B00EA0343 /* PrivacyInfo.xcprivacy */; };
+		49B941692BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 49B941672BDF954B00EA0343 /* PrivacyInfo.xcprivacy */; };
+		49B9416A2BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 49B941672BDF954B00EA0343 /* PrivacyInfo.xcprivacy */; };
+		49B9416B2BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 49B941672BDF954B00EA0343 /* PrivacyInfo.xcprivacy */; };
 		4F47A3E21D351E8100702747 /* Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F47A3E11D351E8100702747 /* Tracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F47A4471D3541C500702747 /* ATInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A4461D3541C500702747 /* ATInternet.swift */; };
 		4F47A4481D3541C500702747 /* ATInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A4461D3541C500702747 /* ATInternet.swift */; };
@@ -554,6 +558,7 @@
 
 /* Begin PBXFileReference section */
 		1311F4E42B31C45300162280 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		49B941672BDF954B00EA0343 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		4F47A3DE1D351E8100702747 /* Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F47A3E11D351E8100702747 /* Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
 		4F47A3F91D351EA700702747 /* tvOSTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tvOSTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -771,6 +776,7 @@
 				CCC9F5F823B639C10055516B /* AVInsights */,
 				CC704B2621B58A0A00114A86 /* Ecommerce */,
 				4F47A4461D3541C500702747 /* ATInternet.swift */,
+				49B941672BDF954B00EA0343 /* PrivacyInfo.xcprivacy */,
 				4F47A5591D36209900702747 /* Asset */,
 				4F47A4961D3542DF00702747 /* Core */,
 				4F47A4971D35433300702747 /* Debugger */,
@@ -1217,6 +1223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B941682BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */,
 				4F47A56D1D3620E800702747 /* DefaultConfiguration~ipod.plist in Resources */,
 				8E7AD14420D2C834000FDB08 /* TrackerBundle.bundle in Resources */,
 				4F47A5681D3620E800702747 /* DefaultConfiguration~iphone.plist in Resources */,
@@ -1229,6 +1236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B9416A2BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */,
 				4F47A5601D3620E800702747 /* DefaultConfiguration.plist in Resources */,
 				8E7AD14620D2C834000FDB08 /* TrackerBundle.bundle in Resources */,
 			);
@@ -1238,6 +1246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B9416B2BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */,
 				4F47A5611D3620E800702747 /* DefaultConfiguration.plist in Resources */,
 				8E7AD14720D2C834000FDB08 /* TrackerBundle.bundle in Resources */,
 			);
@@ -1247,6 +1256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B941692BDF954B00EA0343 /* PrivacyInfo.xcprivacy in Resources */,
 				8E7AD14520D2C834000FDB08 /* TrackerBundle.bundle in Resources */,
 				4F47A5641D3620E800702747 /* DefaultConfiguration~ipad.plist in Resources */,
 				4F47A56E1D3620E800702747 /* DefaultConfiguration~ipod.plist in Resources */,
@@ -1863,16 +1873,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = NO;
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -1914,17 +1924,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -1979,7 +1989,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 2.23.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -2041,7 +2051,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 2.23.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -2108,6 +2118,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 1.20.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -2121,7 +2132,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -2171,6 +2182,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 1.20.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -2182,7 +2194,7 @@
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2254,7 +2266,7 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -2316,7 +2328,7 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -2370,7 +2382,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS-Extension.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 2.23.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -2438,7 +2450,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS-Extension.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 2.23.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
